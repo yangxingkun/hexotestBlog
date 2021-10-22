@@ -1,316 +1,718 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
+
 <head>
-  <meta charset="utf-8">
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <!-- <meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no" charset="utf-8> -->
+    <title>2019年百大事件-知微数据</title>
 
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/ball.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/pxloader-all.min.js"></script>
+    <script src="js/pxLoader.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.3.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="json/historyData.json"></script>
 
-<meta name="generator" content="Hexo 5.4.0"></head>
+    <!-- 引入微信JS-SDK -->
+    <!-- <script src="http://res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script> -->
+</head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-article-xia" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/10/22/article-xia/" class="article-date">
-  <time datetime="2021-10-22T08:33:34.000Z" itemprop="datePublished">2021-10-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/22/article-xia/">article xia</a>
-    </h1>
-  
+    <div class="swiper-container" id="eventsSwiper">
+        <div class="music-switch">
+            <img src="img/music.png" class="music">
+        </div>
+        <audio id="audio" class="audio-box" src="./audio/01.mp3" controls="controls" loop autoplay></audio>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/22/article-xia/" data-id="ckv249c3800005vcx91mlfj5i" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+        <div class="swiper-wrapper">
+            <!-- 首页 -->
+            <div class="swiper-slide">
+                <div id="slide_1">
+                    <div class="index-title">
+                        <div class="index-title-content ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"
+                            swiper-animate-delay="0.1s">
+                            <p>你的2019年</p>
+                            <p>都经历了哪些“最”</p>
+                            <p>时刻</p>
+                        </div>
+                    </div>
+                    <div class="index-bottom ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s"
+                        swiper-animate-delay="1s">
+                    </div>
+                    <div class="square">
+                        <div class="light ani">
+                            <div class="light-ball"></div>
+                            <div class="light-text">超强台风利奇马登陆</div>
+                        </div>
+                        <div class="light">
+                            <div class="light-ball"></div>
+                            <div class="light-text">黑洞照片版权风波</div>
+                        </div>
+                        <div class="light">
+                            <div class="light-ball"></div>
+                            <div class="light-text">电影《流浪地球》热映</div>
+                        </div>
+                        <div class="light">
+                            <div class="light-ball"></div>
+                            <div class="light-text">庆祝中华人民共和国成立70周年大会隆重举行</div>
+                        </div>
+                        <div class="light">
+                            <div class="light-ball"></div>
+                            <div class="light-text">2019年全国高考</div>
+                        </div>
+                        <div class="light">
+                            <div class="light-ball"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- 第一题-->
+            <div class="swiper-slide">
+                <div id="slide_2">
+                    <div class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.3s">
+                        <div class="fire">
+                            <canvas class="fire-canvas"></canvas>
+                        </div>
+                    </div>
+                    <div class="ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="0.6s">
+                        <div class="back-row-toggle splat-toggle">
+                            <div class="rain front-row"></div>
+                            <div class="rain back-row"></div>
+                        </div>
+                    </div>
+                    <div class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.52s">
+                        <div class="question-num question-num-one"></div>
+                    </div>
+                    <div class="question-answer question-1">
+                        <section class="first-question-section">
+                            <div class="first-question ani" swiper-animate-effect="bounceInDown"
+                                swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+                                <p>你印象最深刻的一场大火是？</p>
+                            </div>
+                            <div class="left-answer bgSR">
+                                <div class="ani answer-1" swiper-animate-effect="fadeInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="answer-one">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q1" value="a">巴黎圣母院着火
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-1" swiper-animate-effect="fadeInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.55s">
+                                    <label>
+                                        <div class="answer-two">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q1" value="b">四川凉山森林火灾
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-1" swiper-animate-effect="fadeInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+                                    <label>
+                                        <div class="answer-three">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q1" value="c">日本“京都动画”工作室遭纵火
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="right-answer">
+                                <div class="ani answer-1" swiper-animate-effect="fadeInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="answer-four bgSR">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q1" value="d">江苏盐城响水化工厂爆炸事件
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-1" swiper-animate-effect="fadeInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.55s">
+                                    <label>
+                                        <div class="answer-five">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q1" value="e">“地球之肺”亚马逊雨林大火持续燃烧三星期
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="answer-result">
+                                <div class="answer-result answer-1-a">
+                                    <ul>
+                                        <li>国际</li>
+                                        <li>人文科技</li>
+                                    </ul>
+                                    <span>北京时间4月16日，一场大火席卷了800多年历史的巴黎圣母院，媒体争相报道，单日最高舆论场占比超五成。</span>
+                                </div>
+                                <div class="answer-result answer-1-b">
+                                    <ul>
+                                        <li>社会</li>
+                                    </ul>
+                                    <span>3月30日，四川凉山木里县突发森林火灾，火光中逆行的那30个名字，永远在人们记忆中闪烁。</span>
+                                </div>
+                                <div class="answer-result answer-1-c">
+                                    <ul>
+                                        <li>国际</li>
+                                        <li>互联网</li>
+                                    </ul>
+                                    <span>7月18日，这是动画史上最黑暗的一天，“京都动画”遭一男子纵火，全体漫迷关注、祈福。</span>
+                                </div>
+                                <div class="answer-result answer-1-d">
+                                    <ul>
+                                        <li>社会</li>
+                                    </ul>
+                                    <span>3月21日，江苏盐城响水县一化工厂发生爆炸，历史舆情显示此地从2007起就陆续发生多起事故：爆炸、泄露，居民连夜出逃。</span>
+                                </div>
+                                <div class="answer-result answer-1-e">
+                                    <ul>
+                                        <li>国际</li>
+                                    </ul>
+                                    <span>8月10日，巴西农民在放火清理土地时不慎引发火灾，却让“地球之肺”亚马逊雨林燃烧数周，在大地上烙下深深的伤疤。</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
 
-  
-    <article id="post-article-title2" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/10/22/article-title2/" class="article-date">
-  <time datetime="2021-10-22T07:35:05.000Z" itemprop="datePublished">2021-10-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/22/article-title2/">article title2</a>
-    </h1>
-  
+            <!-- 第二题 -->
+            <div class="swiper-slide">
+                <div id="slide_3">
+                    <div class="light-three"></div>
+                    <div class="face"></div>
+                    <div class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.52s">
+                        <div class="bgSR question-num question-num-two"></div>
+                    </div>
+                    <div class="question-answer question-2">
+                        <section class="second-question-section">
+                            <div class="second-question ani" swiper-animate-effect="fadeInDown"
+                                swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+                                <p>你记忆中最清晰的一张面孔是？</p>
+                            </div>
+                            <div class="second-question-answer">
+                                <div class="ani answer-2" swiper-animate-effect="slideInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="second-answer">
+                                            <img class='checked-img' />
+                                            <img class="second-answer-img second-answer-one" />
+                                            <input type="radio" name="q2" value="a">西安奔驰漏油事件
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-2" swiper-animate-effect="fadeInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+                                    <label>
+                                        <div class="second-answer">
+                                            <img class='checked-img' />
+                                            <img class="second-answer-img second-answer-two" />
+                                            <input type="radio" name="q2" value="b">高以翔录制节目<br />《追我吧》时猝死
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-2" swiper-animate-effect="fadeInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="second-answer">
+                                            <img class='checked-img' />
+                                            <img class="second-answer-img second-answer-three" />
+                                            <input type="radio" name="q2" value="c">湖南新晃一教师失踪16年<br />骸骨被埋操场
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-2" swiper-animate-effect="fadeInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+                                    <label>
+                                        <div class="second-answer">
+                                            <img class='checked-img' />
+                                            <img class="second-answer-img second-answer-four" />
+                                            <input type="radio" name="q2" value="d">浙江杭州一女童被<br />两名租客带走失联
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-2" swiper-animate-effect="fadeInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+                                    <label>
+                                        <div class="second-answer">
+                                            <img class='checked-img' />
+                                            <img class="second-answer-img second-answer-five" />
+                                            <input type="radio" name="q2" value="e">香港示威者群殴环球网<br />记者付国豪至昏迷
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="answer-result">
+                                <div class="answer-result answer-2-a">
+                                    <ul>
+                                        <li>企业</li>
+                                        <li>社会</li>
+                                    </ul>
+                                    <span>4月11日，一女子坐于奔驰车盖上维权的视频被大量转发，揭开了长达半个月的全民声讨序幕，事件影响力超过99%的企业舆情。</span>
+                                </div>
+                                <div class="answer-result answer-2-b">
+                                    <ul>
+                                        <li>娱乐</li>
+                                        <li>互联网</li>
+                                    </ul>
+                                    <span>11月27日，男星高以翔录制《追我吧》节目晕倒后送医，最终抢救无效去世，这一次失去与告别，让人措手不及。</span>
+                                </div>
+                                <div class="answer-result answer-2-c">
+                                    <ul>
+                                        <li>社会</li>
+                                    </ul>
+                                    <span>6月19日，湖南怀化警方在新晃一中操场上挖出一具骸骨，曝光了一起16年前的埋尸案，真相缓缓呈现于世人眼前。</span>
+                                </div>
+                                <div class="answer-result answer-2-d">
+                                    <ul>
+                                        <li>社会</li>
+                                    </ul>
+                                    <span>7月4日，杭州10岁女童被租客带走后失联，发博寻人、转发接力，章子欣小朋友的下落一直牵动着全网的心。</span>
+                                </div>
+                                <div class="answer-result answer-2-e">
+                                    <ul>
+                                        <li>国际</li>
+                                        <li>爱国</li>
+                                    </ul>
+                                    <span>8月13日，香港机场，一句“我支持香港警察，你们可以打我了”在汹涌的人群中坚定地传出，响遍神州大地。</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/22/article-title2/" data-id="ckv226g280001v9cxg6fa73aj" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+            <!-- 第三题 -->
+            <div class="swiper-slide">
+                <div id="slide_4">
+                    <div class="night-light"></div>
+                    <div class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.52s">
+                        <div class="question-num question-num-three"></div>
+                    </div>
+                    <div class="mobile-hand">
+                        <div class="mobile img"></div>
+                        <div class="begin img"></div>
+                        <div class="begining img"></div>
+                        <div class="hand img"></div>
+                    </div>
+                    <div class="question-answer question-3">
+                        <section class="third-question-section">
+                            <div class="third-question ani" swiper-animate-effect="fadeInLeft"
+                                swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+                                <p>这次瓜，你吃得最开心，甚至回复帖子到了深夜……</p>
+                            </div>
+                            <div class="third-question-answer">
+                                <div class="ani answer-3" swiper-animate-effect="slideInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="third-answer third-border-one">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q3" value="a">
+                                            <span>翟天临被指论文抄袭事件</span>
+                                            <img class='third-emjoy third-emjoy-one' />
+                                        </div>
+                                    </label>
+                                </div>
 
+                                <div class="ani answer-3" swiper-animate-effect=" slideInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.55s">
+                                    <label>
+                                        <div class="third-answer third-border-two">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q3" value="b">
+                                            <span>王源抽烟引热议</span>
+                                            <img class='third-emjoy third-emjoy-two' />
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-3" swiper-animate-effect=" slideInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+                                    <label>
+                                        <div class="third-answer third-border-three">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q3" value="c">
+                                            <span>“周杰伦超话打榜”事件</span>
+                                            <img class='third-emjoy third-emjoy-three' />
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-3" swiper-animate-effect=" slideInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.65s">
+                                    <label>
+                                        <div class="third-answer third-border-four">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q3" value="d">
+                                            <span>俞渝朋友圈开撕李国庆</span>
+                                            <img class='third-emjoy third-emjoy-four' />
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-3" swiper-animate-effect=" slideInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.7s">
+                                    <label>
+                                        <div class="third-answer third-border-five">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q3" value="e">
+                                            <span>网红阿沁自曝和男朋友分手</span>
+                                            <img class='third-emjoy third-emjoy-five' />
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="answer-result">
+                                <div class="answer-result answer-3-a">
+                                    <ul>
+                                        <li>娱乐</li>
+                                    </ul>
+                                    <span>2月8日，由于直播中一句“什么是知网”，翟天临陷入了“学术不端”的风波之中，学霸人设也被网友扒了个底朝天。</span>
+                                </div>
+                                <div class="answer-result answer-3-b">
+                                    <ul>
+                                        <li>娱乐</li>
+                                    </ul>
+                                    <span>5月21日，王源被曝吃饭时吸烟，一天十余个热搜的背后，是网友们对“名人失格”的争论。</span>
+                                </div>
+                                <div class="answer-result answer-3-c">
+                                    <ul>
+                                        <li>娱乐</li>
+                                        <li>互联网</li>
+                                    </ul>
+                                    <span>7月16日，“周杰伦微博数据那么差”的质疑带动夕阳红粉丝团连夜打榜，让周董成功成为首位超话影响力破亿的艺人。</span>
+                                </div>
+                                <div class="answer-result answer-3-d">
+                                    <ul>
+                                        <li>企业</li>
+                                    </ul>
+                                    <span>10月23日，俞渝在李国庆朋友圈下回复怒斥李国庆，这对相伴二十多年的夫妻对撕，却成功拯救(save)了隔壁的江一燕。</span>
+                                </div>
+                                <div class="answer-result answer-3-e">
+                                    <ul>
+                                        <li>娱乐</li>
+                                        <li>互联网</li>
+                                    </ul>
+                                    <span>11月19日，网红阿沁宣布与男友刘阳分手，“阿沁、刘阳、半藏森林是谁”成为了2019年度热搜之谜。</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
 
-  
-    <article id="post-article-title" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/10/22/article-title/" class="article-date">
-  <time datetime="2021-10-22T07:34:42.000Z" itemprop="datePublished">2021-10-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/22/article-title/">article title</a>
-    </h1>
-  
+            <!-- 第四题 -->
+            <div class="swiper-slide">
+                <div id="slide_5">
+                    <div class="cup"></div>
+                    <div class='give-me-five'></div>
+                    <div class="coloured-ribbon"></div>
+                    <div class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.52s">
+                        <div class="question-num question-num-four"></div>
+                    </div>
+                    <div class="question-answer question-4">
+                        <section class="fourth-question-section">
+                            <div class="fourth-question ani" swiper-animate-effect="fadeInDown"
+                                swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+                                <p>这场比赛，激动人心，得分你来我往，让你手心捏了一把汗……</p>
+                            </div>
+                            <div class="fourth-question-answer">
+                                <div class="ani answer-4" swiper-animate-effect="slideInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+                                    <label>
+                                        <div class="fourth-answer fourth-answer-one">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q4" value="a">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-4" swiper-animate-effect="slideInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.65s">
+                                    <label>
+                                        <div class="fourth-answer fourth-answer-two">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q4" value="b">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-4" swiper-animate-effect="slideInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.7s">
+                                    <label>
+                                        <div class="fourth-answer fourth-answer-three">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q4" value="c">
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-4" swiper-animate-effect="slideInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.75s">
+                                    <label>
+                                        <div class="fourth-answer FPX fourth-answer-four">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q4" value="d">
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="answer-result">
+                                <div class="answer-result answer-4-a">
+                                    <ul>
+                                        <li>娱乐</li>
+                                        <li>国际</li>
+                                    </ul>
+                                    <span>1月5日，第17届亚足联亚洲杯足球赛举行，中国队却0-3不敌伊朗止步八强，里皮宣布离任。</span>
+                                </div>
+                                <div class="answer-result answer-4-b">
+                                    <ul>
+                                        <li>娱乐</li>
+                                        <li>国际</li>
+                                    </ul>
+                                    <span>8月31日，第18届国际篮联篮球世界杯举行，影响力高于88%的体育类事件。</span>
+                                </div>
+                                <div class="answer-result answer-4-c">
+                                    <ul>
+                                        <li>娱乐</li>
+                                        <li>爱国</li>
+                                    </ul>
+                                    <span>9月28日，中国女排豪取十连胜，提前一轮卫冕成功，在举国庆祝新中国成立70周年的时刻，为祖国献礼。</span>
+                                </div>
+                                <div class="answer-result answer-4-d">
+                                    <ul>
+                                        <li>娱乐</li>
+                                        <li>互联网</li>
+                                    </ul>
+                                    <span>11月10日，FPX获得英雄联盟S9总冠军，但相比于去年的“IG牛X”，今年的热度可要略逊一筹。</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/22/article-title/" data-id="ckv226g240000v9cx155gdhc6" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+            <!-- 第五题 -->
+            <div class="swiper-slide">
+                <div id="slide_6">
+                    <div class="rotate-bg">
+                        <div class="rotate-square"></div>
+                    </div>
+                    <div class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.52s">
+                        <div class="question-num question-num-five"></div>
+                    </div>
+                    <div class="question-answer question-5">
+                        <section class="fifth-question-section">
+                            <div class="fifth-question ani" swiper-animate-effect="fadeInDown"
+                                swiper-animate-duration="1s" swiper-animate-delay="0.1s">
+                                <p>这一刻早已预热许久，但当正式公布时，你还是觉得自己或许见证了历史……</p>
+                            </div>
+                            <div class="fifth-question-answer">
+                                <div class="ani answer-5" swiper-animate-effect="zoomInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="fifth-answer fifth-answer-one">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q5" value="a">
+                                            <span>人类首张黑洞照片公布</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-5" swiper-animate-effect="zoomInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="fifth-answer fifth-answer-two">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q5" value="b">
+                                            <span>工信部发放5G商用牌照</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-5" swiper-animate-effect="zoomInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="fifth-answer fifth-answer-three">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q5" value="c">
+                                            <span>携号转网正式试运行</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-5" swiper-animate-effect="zoomInRight"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="fifth-answer fifth-answer-four">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q5" value="d">
+                                            <span>粤港澳大湾区规划出台</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="ani answer-5" swiper-animate-effect="zoomInLeft"
+                                    swiper-animate-duration="0.8s" swiper-animate-delay="0.5s">
+                                    <label>
+                                        <div class="fifth-answer FPX fifth-answer-four">
+                                            <img class='checked-img' />
+                                            <input type="radio" name="q5" value="e">
+                                            <span>科创板宣布开板</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="answer-result">
+                                <div class="answer-result answer-5-a">
+                                    <ul>
+                                        <li>国际</li>
+                                        <li>人文科技</li>
+                                    </ul>
+                                    <span>北京时间4月10日，全球六地同步公布了人类首张黑洞照片，谁能想到第二天，视觉中国就因照片版权问题夺走了舆论焦点。</span>
+                                </div>
+                                <div class="answer-result answer-5-b">
+                                    <ul>
+                                        <li>企业</li>
+                                        <li>人文科技</li>
+                                    </ul>
+                                    <span>6月6日，随着5G商用牌照的发放，中国正式进入5G商用元年，“何同学”从4G看5G一炮走红，未来会有怎样奇妙的变化。</span>
+                                </div>
+                                <div class="answer-result answer-5-c">
+                                    <ul>
+                                        <li>社会</li>
+                                    </ul>
+                                    <span>11月10日，千呼万唤始出来的携号转网服务正式进入试运行阶段，号码带着回忆一起走。</span>
+                                </div>
+                                <div class="answer-result answer-5-d">
+                                    <ul>
+                                        <li>社会</li>
+                                        <li>爱国</li>
+                                    </ul>
+                                    <span>2月18日，《粤港澳大湾区发展规划纲要》出台，央媒参与度高于99%的事件。</span>
+                                </div>
+                                <div class="answer-result answer-5-e">
+                                    <ul>
+                                        <li>企业</li>
+                                        <li>爱国</li>
+                                    </ul>
+                                    <span>6月13日，科创板开板仪式于第十一届陆家嘴论坛上举行，7月22日首批25家公司正式上市交易，交出了第一份成绩单。</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
 
+            </div>
 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/10/22/hello-world/" class="article-date">
-  <time datetime="2021-10-22T07:17:41.094Z" itemprop="datePublished">2021-10-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/10/22/hello-world/">Hello World</a>
-    </h1>
-  
+            <!-- 时间轴 -->
+            <div class="swiper-slide">
+                <div id="slide_7">
+                    <div class="history-title ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.1s">
+                        <p>你与世界相拥，点击卡片回忆2019年的“最时刻”</p>
+                    </div>
+                    <div id="swiper-history">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper"></div>
+                            <div class="long-line"></div>
+                        </div>
+                    </div>
+                    <div class="speck">
+                        <span>评论专区</span>
+                        <div class="line"></div>
+                    </div>
+                    <div class="screen">
+                        <div class="s_show"></div>
+                    </div>
+                </div>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+            </div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+            <!-- 结果页 -->
+            <div class="swiper-slide">
+                <div id="slide_8">
+                    <div class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.1s">
+                        <div class="border-top"></div>
+                    </div>
+                    <div class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.1s">
+                        <p class="title-bg">2019年，你爱网上冲浪，掌握着一手热点资讯</p>
+                    </div>
+                    <div class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s"
+                        swiper-animate-delay="0.1s">
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="answer-last">
+                        <div class="show-answer ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s"
+                            swiper-animate-delay="0.36s">
+                            <span class="red-dot"></span>
+                            <p class="answer-last-1"></p>
+                        </div>
+                        <div class="show-answer ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s"
+                            swiper-animate-delay="0.36s">
+                            <span class="red-dot"></span>
+                            <p class="answer-last-2"></p>
+                        </div>
+                        <div class="show-answer ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s"
+                            swiper-animate-delay="0.36s">
+                            <span class="red-dot"></span>
+                            <p class="answer-last-3"></p>
+                        </div>
+                        <div class="show-answer ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s"
+                            swiper-animate-delay="0.36s">
+                            <span class="red-dot"></span>
+                            <p class="answer-last-4"> </p>
+                        </div>
+                        <div class="show-answer ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s"
+                            swiper-animate-delay="0.36s">
+                            <span class="red-dot"></span>
+                            <p class="answer-last-5"></p>
+                        </div>
+                        <div class="new-year">
+                            <div class="ani answer-3" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s"
+                                swiper-animate-delay="0.36s">
+                                <div class="sign-top"></div>
+                                <span>这一切终将过去了的，</span>
+                            </div>
+                            <div class="ani answer-3" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.5s"
+                                swiper-animate-delay="0.39s">
+                                <span>还有知微，有我为你留下数据的真相</span>
+                                <div class="sign-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="ani share-box" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s"
+                            swiper-animate-delay="1.5s">
+                            <div class="share-btn">分享</span>
+                                <div class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s"
+                                    swiper-animate-delay="0.8s">
+                                    <p class="zwsj">知微事见，你的私人数据管家</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <!--    <div class="swiper-pagination"></div>-->
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+            <!-- 如果需要导航按钮 -->
+            <!--    <div class="swiper-button-prev"></div>-->
+            <!--    <div class="swiper-button-next"></div>-->
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+            <!-- 如果需要滚动条 -->
+            <!--    <div class="swiper-scrollbar"></div>-->
+            <!-- 弹出框-》分享 -->
+            <div class="hide-share-bg"></div>
+            <div class="share-content">
+                <button class="to-friend-group">发送到微信朋友圈</button>
+                <button class="to-friend">发送给微信好友</button>
+                <button class="cancel">取消</button>
+            </div>
+        </div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <script src="js/fire.js"></script>
+        <script src="js/rain.js"></script>
+        <script src="js/danmu.js"></script>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/10/22/hello-world/" data-id="ckv21n1kf000055cx07j70acs" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/10/22/article-xia/">article xia</a>
-          </li>
-        
-          <li>
-            <a href="/2021/10/22/article-title2/">article title2</a>
-          </li>
-        
-          <li>
-            <a href="/2021/10/22/article-title/">article title</a>
-          </li>
-        
-          <li>
-            <a href="/2021/10/22/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2021 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
+
 </html>

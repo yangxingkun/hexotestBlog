@@ -1,0 +1,153 @@
+
+.square {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    pointer-events: none;
+}
+
+.light {
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    animation-name: light;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.light-ball {
+    border-radius: 100px;
+}
+
+.light-text {
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+@keyframes light {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 0.2;
+    }
+}
+
+.light:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 120px;
+    height: 120px;
+    margin-top: -50px;
+    margin-left: -50px;
+    z-index: 0;
+    border-radius: 100px;
+}
+
+.light:nth-child(1) {
+    top: 13vh;
+    left: 65vw;
+    animation-delay: -1s;
+}
+
+.light:nth-child(1) .light-ball {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background: linear-gradient(to bottom right, #cac531, #f3f9a7);
+}
+
+.light:nth-child(2) {
+    top: 30vh;
+    right: 30vw;
+    animation-delay: -0.85s;
+    flex-direction: row-reverse;
+}
+
+.light:nth-child(2) .light-ball {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: linear-gradient(to bottom right, #fc4a1a, #f7b733);
+}
+
+.light:nth-child(2) .light-text {
+    width: 80px;
+}
+
+.light:nth-child(3) {
+    top: 54vh;
+    left: 7vw;
+    animation-delay: -0.7s;
+    flex-direction: column;
+}
+
+.light:nth-child(3) .light-ball {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    background: linear-gradient(to top left, #b2fefa, #b2fefa);
+}
+
+.light:nth-child(3) .light-text {
+    width: 100px;
+}
+
+.light:nth-child(4) {
+    top: 65vh;
+    left: 49vw;
+    animation-delay: -0.55s;
+}
+
+.light:nth-child(4) .light-ball {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: linear-gradient(to top left, #ffafbd, #ffc3a0);
+}
+
+.light:nth-child(4) .light-text {
+    width: 135px;
+    text-align: left;
+}
+
+.light:nth-child(5) {
+    top: 80vh;
+    right: 35vw;
+    animation-delay: -0.4s;
+    flex-direction: column;
+}
+
+.light:nth-child(5) .light-ball {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to top right, #cac531, #f3f9a7);
+}
+
+.light:nth-child(6) {
+    top: 77vh;
+    right: 53vw;
+    animation-delay: -0.25s;
+}
+
+.light:nth-child(6) .light-ball {
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(to top right, #ffafbd, #ffc3a0);
+}
